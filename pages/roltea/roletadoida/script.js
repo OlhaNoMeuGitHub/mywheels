@@ -49,14 +49,15 @@ function drawRouletteWheel() {
 
     ctx.font = 'bold 15px Helvetica, Arial';
 
-    for(var i = 0; i < options.length; i++) {
+    for(var i = 0; i < 1; i++) {
       var angle = startAngle + i * arc;
       //ctx.fillStyle = colors[i];
       ctx.fillStyle = getColor(i, options.length);
 
       ctx.beginPath();
-      ctx.arc(250, 250, outsideRadius, angle, angle + arc, false);
-      ctx.arc(250, 250, insideRadius, angle + arc, angle, true);
+      // ctx.arc(250, 250, 200, angle,angle+ arc, false);
+      // ctx.arc(250, 250, outsideRadius, angle, angle + arc, false);
+      ctx.arc(250, 250, 100, 23 , angle, false);
       ctx.stroke();
       ctx.fill();
 
